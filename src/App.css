@@ -1,38 +1,124 @@
-.App {
+* {
+  margin: 0;padding: 0;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+  align-items: center;justify-content: center;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background: #fff9c4;
+}
+p {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+}
+section {
+  padding: 2rem 1rem;
+}
+.logo {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo img {
+  height: 9rem;
+  width: 25rem;
+  margin: 0 auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
-
-.App-link {
-  color: #61dafb;
+.hero .image {
+  flex: 1 1 15rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero .image img {
+  width: 45rem;
+  height: 60rem;
+}
+.hero .content {
+  flex: 1 1 65rem;
+}
+.hero .content .text-box1 ul{
+  margin: 2rem 0 2rem 4rem;
+  font-size: 1.4rem;
+}
+.hero .content img {
+  width: 95%;
+  height: 50rem;
+}
+.box-container {
+  text-align: center;
+}
+.box-container img {
+  width: 90%;
+  height: 40rem;
+}
+.footer {
+  padding-top: 2rem;
+  text-align: center;
+  border-top: 2px solid red;
+  width: 97%;
+  margin: auto;
+}
+.footer .box {
+  margin: 2rem;
+}
+.footer .box p span {
+  border-left: 2px solid rgb(204, 22, 22);
+  content: "";
+  padding: .4rem;
+}
+.social {
+  height: 10rem;
+  width: 99%;
+  margin: auto;
+  background-color: red;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact a{
+  padding: .8rem;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.contact a i {
+  margin-right: 5px;
+}
+/* Responsive breakpoint styling Start */
+@media (max-width: 1134px){
+  html{
+      font-size: 60%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 991px){
+  html{
+      font-size: 55%;
   }
 }
+@media (max-width: 768px){
+  .social {
+    padding-top: 2rem;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    line-height: 2rem;
+    margin-bottom: .7rem;
+  }
+}
+@media (max-width: 450px){
+  html{
+      font-size: 50%;
+  }
+  .footer{
+      text-align: center;
+  }
+}
+/* Responsive breakpoint styling End */
